@@ -13,7 +13,7 @@ Usage
 =====
 
 ```
-$ docker run -it -v /dev/stlinkv2_2:/dev/stlinkv2_2 zoobab/stlink-docker st-flash reset
+$ docker run -it --privileged zoobab/stlink-docker st-flash reset
 st-flash 1.4.0
 2017-12-03T13:04:29 WARN src/usb.c: failed to init libusb context, wrong version of libraries?
 ```
