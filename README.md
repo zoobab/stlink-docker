@@ -7,15 +7,18 @@ with cheap chinese 2USD usb dongles labelled "st-link v2".
 Status
 ======
 
-Not working atm. Probably a clash betwen edge/testing/stable libusb versions?
+WIP, not working atm.
 
 Usage
 =====
 
 ```
-$ docker run -it --privileged zoobab/stlink-docker st-flash reset
+$ ./run.sh
++ docker run -it --privileged zoobab/stlink-docker st-flash reset
 st-flash 1.4.0
-2017-12-03T13:04:29 WARN src/usb.c: failed to init libusb context, wrong version of libraries?
+2017-12-03T15:10:05 INFO src/common.c: Loading device parameters....
+2017-12-03T15:10:05 WARN src/common.c: unknown chip id! 0xe0042000
+$ 
 ```
 
 Links
